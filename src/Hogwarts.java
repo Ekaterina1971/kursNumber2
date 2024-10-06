@@ -1,4 +1,4 @@
-public abstract class Hogwarts {
+public class Hogwarts {
   private String name;
   private String faculty;
   private int transgression;
@@ -10,11 +10,7 @@ public abstract class Hogwarts {
     this.transgression = transgression;
     this.magicPower = magicPower;
   }
-
-  public Hogwarts(int transgression, int magicPower) {
-  }
-
-  public String getName(){
+    public String getName(){
     return name;
   }
   public void setName(String name) {
@@ -34,11 +30,18 @@ public abstract class Hogwarts {
   }
   @Override
   public String toString(){
-    return name + " факультет" + faculty + ", расстояние трансгрессии " + transgression + ", сила магии " + magicPower;
+    return "Студент Хогвартса:" + name + " факультет" + faculty + ", расстояние трансгрессии " + transgression + ", сила магии " + magicPower;
   }
-  public int fullMagic(){
-    return magicPower + transgression;
+  public static void powerOfMagic(Hogwarts student1, Hogwarts student2){
+    int comparison1 = student1.getMagicPower() + student1.getTransgression();
+    int comparison2 = student2.getMagicPower() + student2.getTransgression();
+    if (comparison1 > comparison2) {
+      System.out.println(" Студент Хогвартса " + student1.getName() + " обладает большей мощностью магии, чем " + student2.getName());
+    } else if(comparison1 < comparison2){
+      System.out.println(" Студент Хогвартса " + student2.getName() + " обладает большей мощностью магии, чем " + student1.getName());
+    }
   }
+
 
 }
 

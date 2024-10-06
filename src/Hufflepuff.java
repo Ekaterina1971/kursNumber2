@@ -32,7 +32,14 @@ public class Hufflepuff extends Hogwarts {
         super.toString();
         return getName() + " " + getFaculty() + " расстояние трансгрессии " + getTransgression() + " сила магии " + getMagicPower() + " трудолюбие " + getIndustriousness() + " верность " + getLoyalty() + " чесность " + getHonesty();
     }
-    public int summPower1(){
-        return industriousness + loyalty + honesty;
+    public static void studentComparisonHufflepuff(Hufflepuff comparison1, Hufflepuff comparison2){
+        int student1 = comparison1.getIndustriousness() + comparison1.getLoyalty() + comparison1.getHonesty();
+        int student2 = comparison2.getIndustriousness() + comparison2.getLoyalty() + comparison2.getHonesty();
+        if(student1 > student2) {
+            System.out.println(comparison1.getName() + " лучший ученик Пуффендуя, чем " + comparison2.getName());
+        } else if(student1 < student2) {
+            System.out.println(comparison2.getName() + " лучший ученик Пуффендуя, чем " + comparison1.getName());
+        }
+
     }
 }

@@ -32,4 +32,13 @@ public class Slytherin extends Hogwarts {
         super.toString();
         return getName() + " " + getFaculty() + " расстояние трансгрессии " + getTransgression() + " сила магии " + getMagicPower() + " решительность " + getDetermination() + " амбициозность " + getAmbition() + " находчивость " + getResourcefulness();
     }
+    public static void studentComparisonSlytherin(Slytherin comparison1, Slytherin comparison2){
+        int student1 = comparison1.getDetermination() + comparison1.getAmbition() + comparison1.getResourcefulness();
+        int student2 = comparison2.getDetermination() + comparison2.getAmbition() + comparison2.getResourcefulness();
+        if(student1 > student2) {
+            System.out.println(comparison1.getName() + " лучший ученик Слизерина, чем " + comparison2.getName());
+        } else if(student1 < student2){
+            System.out.println(comparison2.getName() + " лучший ученик Слизерина, чем " + comparison1.getName());
+        }
+    }
 }
