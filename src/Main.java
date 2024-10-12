@@ -34,6 +34,7 @@ public class Main {
         truck.check(truck);
         System.out.println("===============");
         truck2.check(truck2);
+        System.out.println("===============");
     }
 }
 
