@@ -25,7 +25,7 @@ public class Bicycle extends Transport {
         if (wheelsCount != 0 & wheelsCount <4 ) {
             System.out.println("Обслуживаем модель " + getModelName() + " количество колес " + getWheelsCount());
             }  else {
-            if(wheelsCount == 0)
+            if (wheelsCount == 0)
             {System.out.println(" Это не средство передвижения");}
         }
     }

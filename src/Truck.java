@@ -24,7 +24,7 @@ public class Truck extends Transport{
     public void check() {
         if (wheelsCount != 0 & wheelsCount > 4) {
             System.out.println("Обслуживаем модель " + getModelName() + " количество колес " + getWheelsCount());
-            } if(wheelsCount == 0) { System.out.println("Это не средство пердвижения");
+            } else { if(wheelsCount == 0) { System.out.println("Это не средство пердвижения");}
         }
     }
 }
