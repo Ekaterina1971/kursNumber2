@@ -1,4 +1,5 @@
  interface ServisTransport {
-     public void check();
+      default void check(Car car, Bicycle bicycle, Truck truck){
+      }
 }
 

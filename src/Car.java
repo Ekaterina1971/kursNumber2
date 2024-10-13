@@ -21,15 +21,10 @@ public class Car extends Transport{
         this.wheelsCount = wheelsCount;
     }
 
-    public void check(Car car) {
-        if (car != null) {
-            System.out.println("Обслуживаем модель " + car.modelName + " количество колес " + car.wheelsCount);
-            car.updateTyre();
-            car.checkEngine();
-        } else {
-            System.out.println(" Это не средство передвижения");
+    public void check() {
+        if (wheelsCount != 0 & wheelsCount == 4) {
+            System.out.println("Обслуживаем модель " + getModelName() + " количество колес " + getWheelsCount());
+            } if(wheelsCount == 0)
+        {System.out.println(" Это не средство передвижения");}
         }
-
-
     }
-}

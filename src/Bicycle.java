@@ -21,11 +21,12 @@ public class Bicycle extends Transport {
         super();
     }
 
-    public void check(Bicycle bicycle) {
-        if (bicycle != null) {
-            System.out.println("Обслуживаем модель " + bicycle.modelName + " количество колес " + bicycle.wheelsCount);
-            bicycle.updateTyre();
-            }    else { System.out.println(" Это не средство передвижения");
+    public void check(){
+        if (wheelsCount != 0 & wheelsCount <4 ) {
+            System.out.println("Обслуживаем модель " + getModelName() + " количество колес " + getWheelsCount());
+            }  else {
+            if(wheelsCount == 0)
+            {System.out.println(" Это не средство передвижения");}
         }
     }
 }
