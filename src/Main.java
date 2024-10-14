@@ -24,27 +24,13 @@ public class Main {
         truck2.wheelsCount = 8;
 
         bicycle.check();
-        bicycle.updateTyre();
-        System.out.println("===============");
         bicycle2.check();
         System.out.println("===============");
         car.check();
-        car.updateTyre();
-        car.checkEngine();
-        System.out.println("===============");
         car2.check();
-        car2.updateTyre();
-        car2.checkEngine();
         System.out.println("===============");
         truck.check();
-        truck.updateTyre();
-        truck.checkEngine();
-        truck.checkTrailer();
-        System.out.println("===============");
         truck2.check();
-        truck2.updateTyre();
-        truck2.checkEngine();
-        truck2.checkTrailer();
         System.out.println("===============");
     }
 }
